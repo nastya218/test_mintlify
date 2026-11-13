@@ -1,0 +1,30 @@
+---
+title: "Configuration"
+description: "The settings you can change."
+---
+
+Settings live in `example.config.json`:
+
+```json example.config.json
+{
+  "name": "my-project",
+  "port": 3000,
+  "debug": false
+}
+```
+
+<ParamField body="name" type="string" required>
+  The name of your project. Shown in the page title.
+</ParamField>
+
+<ParamField body="port" type="number" default="3000">
+  The port the local server listens on.
+</ParamField>
+
+<ParamField body="debug" type="boolean" default="false">
+  Print extra logs while the server runs.
+</ParamField>
+
+<Warning>
+  Don't commit secrets to this file.
+</Warning>

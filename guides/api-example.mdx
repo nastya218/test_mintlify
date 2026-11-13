@@ -1,0 +1,32 @@
+---
+title: "API example"
+description: "A sample request and response."
+---
+
+## Create an item
+
+```bash
+curl -X POST https://api.example.com/v1/items \
+  -H "Authorization: Bearer $API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{ "name": "My item" }'
+```
+
+<ResponseField name="id" type="string">
+  The new item's id.
+</ResponseField>
+
+<ResponseField name="name" type="string">
+  The name you sent.
+</ResponseField>
+
+```json Response
+{
+  "id": "item_123",
+  "name": "My item"
+}
+```
+
+<Tip>
+  Tabs, accordions and callouts like this one are available in every page.
+</Tip>
