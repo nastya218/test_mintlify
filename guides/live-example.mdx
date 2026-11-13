@@ -1,0 +1,39 @@
+---
+title: "Live example"
+description: "Interactive JavaScript components rendered inside a docs page."
+---
+
+import { Counter } from '/snippets/counter.jsx';
+import { Greeting } from '/snippets/greeting.jsx';
+
+Mintlify renders React components inside the page, so you can show working code, not only screenshots.
+
+## A counter
+
+Click the buttons to change the number.
+
+<Counter />
+
+You can pass props, for example a different starting value:
+
+<Counter start={10} />
+
+## An input and a request
+
+Type a name, then load a random quote from a public API.
+
+<Greeting />
+
+## How it works
+
+Each component lives in its own file under `snippets/`, and the page imports it:
+
+```mdx
+import { Counter } from '/snippets/counter.jsx';
+
+<Counter start={10} />
+```
+
+<Note>
+  React hooks such as `useState` can be used without importing them.
+</Note>

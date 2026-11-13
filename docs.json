@@ -11,11 +11,18 @@
     "groups": [
       {
         "group": "Getting started",
-        "pages": ["index", "quickstart"]
+        "pages": [
+          "index",
+          "quickstart"
+        ]
       },
       {
         "group": "Guides",
-        "pages": ["guides/configuration", "guides/api-example"]
+        "pages": [
+          "guides/configuration",
+          "guides/api-example",
+          "guides/live-example"
+        ]
       }
     ]
   }
